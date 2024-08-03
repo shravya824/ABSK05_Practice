@@ -1,0 +1,60 @@
+https://demo.guru99.com/test/selenium-xpath.html---Link
+
+
+
+
+Following 
+
+
+Selects all elements in the document of the current node( ) [ UserID input box is the current node] as shown in the below screen.
+
+//input[@type='text']//following::input[1]
+
+
+
+Ancestor
+
+The ancestor axis selects all ancestors element (grandparent, parent, etc.) of the current node as shown in the below screen.
+
+In the below expression, we are finding ancestors element of the current node(“ENTERPRISE TESTING” node).
+
+//*[text()='Enterprise Testing']//ancestor::div[1]
+
+
+Child
+
+Selects all children elements of the current node (Java) as shown in the below screen.
+
+There are 71 “li” nodes matching by using “child” axis. If you want to focus on any particular element then you can use the below xpath:
+
+Xpath=//*[@id='java_technologies']//child::li[1]
+
+
+
+
+Preeceding
+
+Select all nodes that come before the current node as shown in the below screen.
+
+In the below expression, it identifies all the input elements before “LOGIN” button that is Userid and password input element.
+
+//*[@type='submit']//preceding::input[1]
+
+
+
+Following-Sibling
+Select the following siblings of the context node. Siblings are at the same level of the current node as shown in the below screen. It will find the element after the current node.
+
+//*[@type='submit']//following-sibling::input
+
+
+Parent
+Selects the parent of the current node as shown in the below screen.
+
+//*[@id='rt-feature']//parent::div[1]
+
+
+
+
+
+
